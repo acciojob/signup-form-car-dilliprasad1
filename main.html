@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<title>Signup Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<form method="post" action="submit-form.php">
+		<label for="name">Name*</label>
+		<input type="text" id="name" name="name" placeholder="Name" required>
 
+		<label for="email">Email*</label>
+		<input type="email" id="email" name="email" placeholder="Email" required>
+
+		<label>Gender*</label>
+		<label for="gender-m">
+			<input type="radio" id="gender-m" name="gender" value="male" required> Male
+		</label>
+		<label for="gender-f">
+			<input type="radio" id="gender-f" name="gender" value="female" required> Female
+		</label>
+
+		<label for="cars">Car Brands*</label>
+		<select id="cars" name="cars" required>
+			<option value="">--Please choose an option--</option>
+			<option value="BMW">BMW</option>
+			<option value="Audi">Audi</option>
+			<option value="Mercedes">Mercedes</option>
+		</select>
+
+		<label for="age">Age*</label>
+		<input type="number" id="age" name="age" placeholder="Age" required>
+
+		<label for="dob">Date of Birth*</label>
+		<input type="date" id="dob" name="dob" required>
+
+		<label for="tel">Phone Number</label>
+		<input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+
+		<label for="password">Password*</label>
+		<input type="password" id="password" name="password" placeholder="Password" required>
+
+		<label for="tos">
+			<input type="checkbox" id="tos" name="tos" required> I agree to the TOS.
+		</label>
+
+		<button type="submit">Submit</button>
+	</form>
 </body>
-
 </html>
